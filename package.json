@@ -9,6 +9,7 @@
     "eslint-config-airbnb-base": "^15.0.0",
     "eslint-plugin-import": "^2.27.5",
     "html-webpack-plugin": "^5.5.0",
+    "live-server": "^1.2.2",
     "mini-css-extract-plugin": "^2.7.3",
     "raw-loader": "^4.0.2",
     "webpack": "^5.76.1",
@@ -24,7 +25,8 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "webpack --mode production",
-    "lint": "eslint ."
+    "lint": "eslint .",
+    "start": "npm run build && live-server --port=8080 --watch=dist"
   },
   "repository": {
     "type": "git",
